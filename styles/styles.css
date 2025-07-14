@@ -1,0 +1,125 @@
+body {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7;
+	background-color: #f9f8fb;
+	color: #222;
+}
+
+.container {
+	flex: 0 1 700px;
+	padding: 30px 40px;
+	background-color: white;
+	box-shadow: 0 2px 8px rgba(101, 80, 156, 0.12);
+}
+
+h1 {
+	margin-bottom: 0.8em;
+	font-family: "Segoe UI Black", "Arial Black", Arial, sans-serif;
+	font-size: 2.8rem;
+	font-weight: 900;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: #111;
+}
+
+p {
+	font-size: 1.15rem;
+	line-height: 1.8;
+	max-width: 650px;
+	margin-bottom: 1.6em;
+}
+
+ul {
+	margin-left: 1.5em;
+	margin-bottom: 1.6em;
+	font-size: 1.1rem;
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	position: relative;
+	margin-bottom: 0.75em;
+	padding-left: 1.4em;
+	line-height: 1.5;
+}
+
+li::before {
+	content: "";
+	position: absolute;
+	top: 0.6em;
+	left: 0;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	background-color: #8277b5; /* medium purple bullet */
+}
+
+a {
+	color: #f09823;
+}
+
+a:hover,
+a:focus {
+	color: #8277b5; /* lighter lavender on hover */
+}
+
+.post-date {
+	color: #8277b5; /* a muted purple */
+	font-size: 0.9rem;
+	margin-top: -1em; /* pull it closer to the heading */
+	margin-bottom: 1.5em;
+	font-style: italic;
+	user-select: none;
+}
+
+.date {
+	display: block;
+	font-size: 0.85rem;
+	color: #888;
+	font-family: monospace;
+	margin-bottom: 0.3rem;
+}
+
+ul.post-list {
+	margin-inline: 0;
+}
+
+ul.post-list li {
+	margin-block-end: 2rem;
+}
+
+ul.post-list li::before {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 15px 20px;
+	}
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0.5em;
+	}
+
+	p,
+	ul {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	ul {
+		margin-left: 1.3em;
+		margin-bottom: 1.2em;
+	}
+
+	li {
+		margin-bottom: 0.6em;
+	}
+}
