@@ -99,6 +99,10 @@ ul.post-list li::before {
 	display: none;
 }
 
+img {
+	width: 100%;
+}
+
 @media (max-width: 768px) {
 	.container {
 		padding: 15px 20px;
