@@ -28,6 +28,16 @@ h1 {
 	color: #111;
 }
 
+h2 {
+	margin-block-start: 1.8em;
+	font-family: "Segoe UI Black", "Arial Black", Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 900;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: #111;
+}
+
 p {
 	font-size: 1.15rem;
 	line-height: 1.8;
@@ -36,11 +46,15 @@ p {
 }
 
 ul {
-	margin-left: 1.5em;
+	margin-left: 1em;
 	margin-bottom: 1.6em;
 	font-size: 1.1rem;
 	list-style: none;
 	padding-left: 0;
+}
+
+ul > li > ul {
+	margin-bottom: 0;
 }
 
 li {
